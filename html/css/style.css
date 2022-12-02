@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.tabs img{
+    width: 200px;
+    height: 230px;
+    margin: 20px;
+   
+}
+.tabs input{
+    display: none;
+}
+#html:checked ~ .css,
+#html:checked ~ .js,
+#html:checked ~ .ts{
+    opacity: .5;
+    transition: .4s;
+}
+#css:checked ~ .html,
+#css:checked ~ .js,
+#css:checked ~ .ts{
+    opacity: .3;
+    transition: .4s;
+}
+#js:checked ~ .html,
+#js:checked ~ .css,
+#js:checked ~ .ts{
+    opacity: .3;
+    transition: .4s;
+}
+#ts:checked ~ .html,
+#ts:checked ~ .css,
+#ts:checked ~ .js{
+    opacity: .3;
+    transition: .4s;
+}
+#all:checked ~ .html,
+#all:checked ~ .css,
+#all:checked ~ .js,
+#all:checked ~ .ts{
+    transition: .4s;
+}
+#hero{
+    background: linear-gradient(45deg, yellow,pink,pink);
+    min-height: 100vh;
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+.lebel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    
+    
+}
+.label label{
+    
+    font-size: 23px;
+    font-family: sans-serif;
+    color: black;
+    padding: 10px 30px;
+    border: 2px solid black;
+    background: yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+.label label:hover{
+    background: white;
+    transform: scale(1.1);
+}
+.tabs{
+    margin-top: 50px;
+    background: linear-gradient(45deg, black,red);
+    padding: 50px;
+    border-radius: 20px;
+}
